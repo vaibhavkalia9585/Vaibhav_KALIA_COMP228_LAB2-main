@@ -7,7 +7,7 @@ public class LottoTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your number (between 3 and 27): ");
+        System.out.print("Enter a number of your choice (between 3 and 27): ");
         String op1 = scanner.nextLine();
         boolean win = false;
 
@@ -15,7 +15,6 @@ public class LottoTest {
             Lotto number = new Lotto();
             int total = 0;
 
-            // Add each element's value to total
             for (int counter = 0; counter < number.arrayLotto().length; counter++) {
                 total += number.arrayLotto()[counter];
             }
